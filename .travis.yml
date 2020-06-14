@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- 14
+cache: yarn
+deploy:
+  provider: heroku
+  api_key:
+    secure: dU8CjmW4pAjWlyyg8/5shCx0dOHAISZLEJO1O/VZQU7FFlyE6d8+ntiHuWf5kG9SYOPRobNI6592aZ3sxiLo0wL6mZUoHzBDaWU8eZzJpxyh7WsF8Y3kmtdapBhMNBNoBiAlyPx0a5aEWAoXO7DkIqr4CPRUKaQQLR6tEV8gM8r4/4koQejJ9GJmdvJm3j6PSajVM3lN8fpax1kWBAg4Mu4JQ0SwGC6frhDUJHkng8yTaZ2+poF8w88xHh21Gv5UkxH2h9zcN52t5emC4joxvb98MMskWm5xHtdMFT+WxyDypFlkx007VcwqWV71f/g6YU3+NNq5YJhZNE8ygD3+qmPBm0BJHDUmfZ54CPDb5AQNn1R9PlrRY/a8w+HlPi8yIdh6owwVsDk/gYDa8zoQpgo/3jQQWWCRo0v4W/KKw/p5KHss9ARoWK8tI+hWd80n5iKvpjfARA8s4/PrwRlOv91O9ygG7gIYyhiH7b0Yucs1QBa1+GyPdYE/LAnGJuTVe2gorr3x2GT+vYvrb1QVr7wNQ31KzlSsHPjlXpTDqm9koYFks6WjwWtj6R5a2Cd0u03TrMQ//27K2PLl7ccPkOCbRLqTHeDQeNsqTl6xjN9/2YYOXHtXMYgQVjNu1cBIWMxpDHHDaHObREOT9KQnudeDrJvcWiHhq1XjtxZe5Ew=
+  app: asteffey-whoami
+  on:
+    repo: asteffey/request-header-parser-microservice
+  skip_cleanup: 'true'
